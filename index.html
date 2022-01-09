@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <title>Frontend Mentor | Stats preview card component</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+        body {
+            background-color: hsl(233, 47%, 7%);
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /*        card style*/
+        .main {
+            height: 84vh;
+            max-height: 700px;
+            width: 86%;
+            margin: 8vh 7%;
+            background-color: hsl(244, 38%, 16%);
+            border-radius: 10px;
+        }
+
+        header {
+            background-color: hsl(277, 64%, 61%);
+            height: 30%;
+            border-radius: 10px 10px 0 0;
+        }
+
+        header>header {
+            background-image: url("images/image-header-mobile.jpg");
+            background-size: cover;
+            background-blend-mode: multiply;
+            opacity: 0.8;
+            height: 100%;
+            width: 100%;
+
+        }
+
+        section {
+            padding: 10px 25px;
+            text-align: center;
+            font-family: 'Lexend Deca', sans-serif;
+            font-size: 15px;
+        }
+
+        h1 {
+            color: white;
+            font-family: inter;
+            font-size: 1.6em;
+        }
+
+        span {
+            color: blueviolet;
+        }
+
+        p {
+            color: gray;
+        }
+
+        h2 {
+            color: hsl(0, 0%, 100%);
+            margin: 0 0 6px 0;
+        }
+
+        aside {
+            color: hsla(0, 0%, 100%, 0.6);
+            text-transform: uppercase;
+            font-family: inter, sans-serif;
+            letter-spacing: 1px;
+            font-size: 12px;
+        }
+
+        @media (min-width: 800px) {
+
+            .clearfix::after {
+                content: "";
+                display: block;
+                clear: both;
+            }
+
+            .main {
+                display: flex;
+                flex-direction: row-reverse;
+                width: 80vw;
+                margin: 20vh auto;
+                height: 60vh;
+                min-height: 400px;
+            }
+
+            header {
+                height: 100%;
+                min-width: 50%;
+                border-radius: 0 10px 10px 0;
+            }
+
+            header>header {
+                background-image: url('images/image-header-desktop.jpg');
+            }
+
+            section {
+                position: relative;
+                padding: 5% 8% 0 6%;
+                height: 100%;
+                width: 50%;
+                text-align: left;
+            }
+
+            p {}
+
+            h1 {
+                font-size: 2.4em;
+                margin-top: 0px;
+            }
+
+            .stats {
+                margin-top: 25%;
+                width: 95%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+            h2 {
+                font-size: 22px;
+                font-weight: 700;
+
+            }
+
+            h2:last-of-type {
+                margin-right: 30px;
+            }
+
+
+            aside {
+                margin-top: 5px;
+                font-weight: 400;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <div class="main clearfix">
+        <header>
+            <header></header>
+        </header>
+        <section>
+            <h1>Get <span>insights</span> that help your business grow.</h1>
+            <p>Discover the benefits of data analytics and make better decisions regarding revenue, customer
+                experience, and overall efficiency.</p>
+
+            <div class="stats">
+                <h2>10k+
+                    <aside>companies</aside>
+                </h2>
+
+                <h2>314<aside>templates</aside>
+                </h2>
+
+                <h2>12m+<aside>queries</aside>
+                </h2>
+            </div>
+
+        </section>
+
+    </div>
+
+</body>
+
+</html>
